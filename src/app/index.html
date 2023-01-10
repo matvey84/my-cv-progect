@@ -1,72 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/main.css">
-  <title>Document</title>
-</head>
-<body class="cv">
-  <section class="cv-container">
-    <header class="cv-header">
-      <nav class="cv-naviagation">
-        <a class="nav-link" href="#contacts">Contacts</a>
-        <a class="nav-link" href="#about-me">About me</a>
-        <a class="nav-link" href="#aducation">Aducation and Courses</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#certificates">Certificates</a>
-        <a class="nav-link" href="#languages">Languages</a>
-      </nav>
-      <section class="cv-presintation">
-        <div class="cv-img__container">
-          <img class="cv-img" src="https://i.postimg.cc/k5mLYY0n/denisPNG.png" alt="Matvev Denis">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body class="cv">
+    <section class="cv-container">
+      <header class="cv-header">
+        <nav class="cv-naviagation">
+          <a class="nav-link" href="#contacts">Contacts</a>
+          <a class="nav-link" href="#about-me">About me</a>
+          <a class="nav-link" href="#aducation">Aducation and Courses</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#certificates">Certificates</a>
+          <a class="nav-link" href="#languages">Languages</a>
+        </nav>
+        <section class="cv-presintation">
+          <div class="cv-img__container">
+            <img
+              class="cv-img"
+              src="https://i.postimg.cc/k5mLYY0n/denisPNG.png"
+              alt="Matvev Denis"
+            />
+          </div>
+          <div class="my-name-block">
+            <h1 class="my-name">Matveev Denis</h1>
+            <h2 class="location">Belarus, Mogilev</h2>
+          </div>
+        </section>
+      </header>
+      <section class="section contact-block" id="contacts">
+        <h2 class="section-title">Contacts</h2>
+        <div class="contact-block-item">
+          <a href="tel:+375 44 545 83 98" class="contact-link">
+            <div class="svg-container">
+              <img class="mobile-svg" src="../../assets/svg/mobile-phone-2642.svg" alt="modile" />
+            </div>
+            <h3 class="contact-info">+375 44 545 83 98</h3>
+          </a>
         </div>
-        <div class="my-name-block">
-          <h1 class="my-name">Matveev Denis</h1>
+        <div class="contact-block-item">
+          <a href="mailto:matvey8407@mail.ru" class="contact-link">
+            <div class="svg-container">
+              <img class="email-svg" src="../../assets/svg/mail-142.svg" alt="modile" />
+            </div>
+            <h3 class="contact-info">matvey8407@mail.ru</h3>
+          </a>
+        </div>
+        <div class="contact-block-item">
+          <a
+            href="https://www.linkedin.com/in/matveev-denis-808257251/"
+            class="contact-link"
+            target="_blank"
+          >
+            <div class="svg-container">
+              <img class="linkedin-svg" src="../../assets/svg/linkedin-112.svg" alt="modile" />
+            </div>
+            <h3 class="contact-info">LinkedIn</h3>
+          </a>
+        </div>
+        <div class="contact-block-item">
+          <a href="https://t.me/matvey8407" class="contact-link" target="_blank">
+            <div class="svg-container">
+              <img class="telegram-svg" src="../../assets/svg/telegram-5945.svg" alt="modile" />
+            </div>
+            <h3 class="contact-info">Telegram</h3>
+          </a>
         </div>
       </section>
-    </header>
-    <section class="contact-block" id="contacts">
-      <div class="contact-block">
-        <div class="svg-container">
-         <img class="mobile-svg" src="../../assets/mobile-phone-2642.svg" alt="modile">
-        </div>
-        <h3 class="mobile">+375 44 545 83 98</h3>
-      </div>
-      <div class="contact-block">
-        <div class="svg-container">
-         <img class="email-svg" src="../../assets/mobile-phone-2642.svg" alt="modile">
-        </div>
-        <h3 class="email" >matvey8407@mail.ru</h3>
-      </div>
-      
-      <h3 class="linked">linkedin</h3>
-      <h3 class="">Telegram</h3>
-      <h3></h3>
+
+      <section class="section about-me" id="about-me">
+        <h2 class="section-title">About Me</h2>
+        My name is Denis Matveev. I am 38 years old and live and work in Mogilev, Republic of
+        Belarus. In 2009, I graduated from the Belarusian Institute of Law with a degree in
+        economics and enterprise management.
+        <ul class="aducation" id="aducation">
+          <li class="aduaction-item">
+            2009, I graduated from the Belarusian Institute of Law with a degree in economics and
+            enterprise management;
+          </li>
+          <li class="aduaction-item">since 2021 I have been studying FE development on my own;</li>
+          <li class="aduaction-item">
+            completed the JavaScript/Front-end 2022Q1 course from RSSchool in September 2022 (<a
+              href="https://app.rs.school/certificate/5f3t5oyi"
+              class="certificat-link"
+              target="_blank"
+              >Certificate</a
+            >);
+          </li>
+          <li class="aduaction-item">
+            completed the React 2022 Q3 course in December 2022 (<a
+              href="https://app.rs.school/certificate/kv4otip4"
+              class="certificat-link"
+              target="_blank"
+              >Certificate</a
+            >);
+          </li>
+        </ul>
+
+        During my studies, in addition to HTML and CSS, I gained knowledge and skills in working
+        with JavaScript, as well as certain skills in working with
+        <b>React</b>, <b>ReactRouter v.6</b>, <b>React Hook Form</b>, <b>React Testing Library</b>,
+        <b>Redux</b>, <b>Redux Toolkit</b>, <b>Redux Async Thunk</b>, <b>Persist</b>, on which I
+        wrote a couple of applications, one of them is an application for finding movies and getting
+        some information about them and of course an application like a to-do list, nothing special
+        you say, but nevertheless, all these applications and work on them helped me figure it all
+        out.
+      </section>
+      <!-- <section class="section aducation" id="aducation">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam vitae,
+        voluptas ducimus ipsam magni dolor. Molestias nam cum doloremque, velit aspernatur ducimus
+        excepturi voluptas illo libero repellendus, deserunt voluptatum
+      </section> -->
+      <section class="section skills" id="skills">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam vitae,
+        voluptas ducimus ipsam magni dolor. Molestias nam cum doloremque, velit aspernatur ducimus
+        excepturi voluptas illo libero repellendus, deserunt voluptatum
+      </section>
+      <section class="section certificates" id="certificates">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor et maiores ex quas asperiores
+        voluptatem quaerat error quam animi, ducimus expedita pariatur sunt alias! Distinctio saepe
+        quaerat ipsam dolorum ea.
+      </section>
+      <section class="section languages" id="languages">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor et maiores ex quas asperiores
+        voluptatem quaerat error quam animi, ducimus expedita pariatur sunt alias! Distinctio saepe
+        quaerat ipsam dolorum ea.
+      </section>
+      <footer class="cv-footer">
+        <h3>+375 44 545 83 98</h3>
+        <h3>matvey8407@mail.ru</h3>
+        <h3>linkedin</h3>
+        <h3>Telegram</h3>
+        <h3>GitHub</h3>
+      </footer>
     </section>
-    <section class="about-me" id="about-me">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis, nisi neque veniam illum quidem dolor quod qui, eaque cupiditate, totam impedit? Est illo debitis maiores. Possimus qui provident enim!
-    </section>
-    <section class="aducation" id="aducation">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam vitae, voluptas ducimus ipsam magni dolor. Molestias nam cum doloremque, velit aspernatur ducimus excepturi voluptas illo libero repellendus, deserunt voluptatum
-    </section>
-    <section class="skills" id="skills">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam vitae, voluptas ducimus ipsam magni dolor. Molestias nam cum doloremque, velit aspernatur ducimus excepturi voluptas illo libero repellendus, deserunt voluptatum
-    </section>
-    <section class="certificates" id="certificates">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor et maiores ex quas asperiores voluptatem quaerat error quam animi, ducimus expedita pariatur sunt alias! Distinctio saepe quaerat ipsam dolorum ea.
-    </section>
-    <section class="languages" id="languages">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor et maiores ex quas asperiores voluptatem quaerat error quam animi, ducimus expedita pariatur sunt alias! Distinctio saepe quaerat ipsam dolorum ea.
-    </section>
-    <footer class="cv-footer">
-      <h3>+375 44 545 83 98</h3>
-      <h3>matvey8407@mail.ru</h3>
-      <h3>linkedin</h3>
-      <h3>Telegram</h3>
-      <h3>GitHub</h3>
-    </footer>
-  </section>
-</body>
+  </body>
 </html>
