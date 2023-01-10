@@ -40,6 +40,7 @@
   border-top: 1px solid var(--main-text-color);
   padding: 15px;
   text-align: justify;
+  font-size: 1.2em;
 }
 .section-title {
   position: absolute;
@@ -140,7 +141,7 @@
   height: 40px;
 }
 .contact-info {
-  font-weight: 1.2em;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 .contact-link {
@@ -176,3 +177,17 @@
 .telegram-svg path {
   fill: var(--main-text-color);
 }
+
+.about-me p {
+  margin-bottom: 5px;
+  text-indent: 20px;
+}
+.aducation-title {
+  margin: 10px 0;
+}
+
+.aduaction-item{
+  align-items: center;
+  list-style: inside url('../../../assets/svg/graduation-cap-5404.svg');
+}
+
