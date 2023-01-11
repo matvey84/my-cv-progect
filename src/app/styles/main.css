@@ -2,8 +2,10 @@
 :root {
 	--main-text-color: rgb(19, 18, 18);
   --section-title-color: rgba(37, 37, 37, 0.849);
-  --main-bg: rgb(188, 250, 229);
+  --main-bg: rgb(245, 245, 219);
   --link-hover-color: rgb(25, 25, 112);
+  --text-link-color: rgba(1, 90, 1, 0.836);
+  --header-and-footer-bg: rgba(64, 224, 208, 0.836)
 }
 
 *,
@@ -25,7 +27,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 17px;
   width: 100%;
   max-width: 1280px;
   height: 900px;
@@ -61,6 +63,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  background-color: var(--header-and-footer-bg);
 }
 .cv-naviagation {
   display: flex;
@@ -70,7 +73,7 @@
   height: 40px;
 }
 .nav-link {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-size: 400;
   color: var(--main-text-color);
   margin: 0 10px;
@@ -89,9 +92,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   width: 70%;
-  height: 250px;
+  height: 100%;
   margin-top: 16px;
+  gap: 10px;
+  padding: 10px;
 }
 .cv-img__container {
   width: 250px;
@@ -127,10 +133,11 @@
 
 .contact-block {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
+  row-gap: 5px;
   min-height: 150px;
 }
 .contact-block-item {
@@ -186,8 +193,78 @@
   margin: 10px 0;
 }
 
+.aducation-list,
+.language-list {
+  margin: 10px 0;
+}
+.language-item{
+  align-items: center;
+  list-style: inside url('../../../assets/svg/translate-speech-bubbles-black-outline-16035.svg');
+}
 .aduaction-item{
   align-items: center;
   list-style: inside url('../../../assets/svg/graduation-cap-5404.svg');
+}
+.cv-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  row-gap: 5px;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid var(--main-text-color);
+  padding: 10px;
+  background-color: var(--header-and-footer-bg);
+}
+.cv-footer-contact-block-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: 24px;
+}
+.cv-footer-contact-info {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+.cv-footer-contact-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: 24px;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+.cv-footer-svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 100%;
+  padding: 5px;
+}
+.cv-footer-linkedin-svg {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 3px;
+}
+.text-link {
+  text-decoration: none;
+  color: var(--text-link-color);
+  font-weight: 600;
+}
+.text-link:hover {
+  text-decoration: underline;
+}
+.project-list {
+  margin: 10px 0;
+}
+.project-item{
+  align-items: center;
+  list-style: inside url('../../../assets/svg/laptop-and-coding-12521.svg');
 }
 
