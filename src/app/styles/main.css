@@ -5,7 +5,7 @@
   --main-bg: rgb(245, 245, 219);
   --link-hover-color: rgb(25, 25, 112);
   --text-link-color: rgba(1, 90, 1, 0.836);
-  --header-and-footer-bg: rgba(64, 224, 208, 0.836)
+  --header-and-footer-bg: rgba(64, 224, 208)
 }
 
 *,
@@ -59,6 +59,9 @@
   z-index: 1000;
 }
 .cv-header {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -66,6 +69,7 @@
   width: 100%;
   background-color: var(--header-and-footer-bg);
   margin-bottom: 5px;
+  z-index: 100000;
 }
 .cv-naviagation {
   display: flex;
@@ -81,7 +85,6 @@
 @media (max-width:885px){
   .nav-link {
     display: none;
-   
   }
 	.burger {
     display: flex;
@@ -126,9 +129,10 @@
   flex-wrap: wrap;
   width: 70%;
   height: 100%;
-  margin-top: 10px;
   gap: 10px;
-  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  margin-top: 40px;
 }
 .cv-img__container {
   width: 250px;
@@ -165,7 +169,8 @@
   .cv-presintation {
     width: 100%;
     height: 100%;
-    padding: 10px 0px;
+    padding: 0 0 10px 0;
+    margin-bottom: 5px;
   }
 }
 
