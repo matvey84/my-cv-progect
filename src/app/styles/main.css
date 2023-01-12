@@ -267,4 +267,21 @@
   align-items: center;
   list-style: inside url('../../../assets/svg/laptop-and-coding-12521.svg');
 }
+.certificate-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.certificate-img-container {
+  width: 40%;
+  height: 300px;
+  margin: 0 15px;
+  background-color: blue;
+}
+.certificate-img-container img { 
+  width: 100%;
+  height: 100%;
+ background-size: cover;
+  background-position: center;
+}
 
