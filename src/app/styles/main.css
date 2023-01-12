@@ -33,16 +33,17 @@
   height: 900px;
   background-color: var(--main-bg);
   margin: 0 auto;
-  padding: 15px;
+  padding: 10px;
 }
 .section {
   position: relative;
   width: 100%;
   height: auto;
   border-top: 1px solid var(--main-text-color);
-  padding: 15px;
+  padding: 10px 0px;
   text-align: justify;
   font-size: 1.2em;
+  margin-bottom: 5px;
 }
 .section-title {
   position: absolute;
@@ -64,6 +65,7 @@
   align-items: center;
   width: 100%;
   background-color: var(--header-and-footer-bg);
+  margin-bottom: 5px;
 }
 .cv-naviagation {
   display: flex;
@@ -72,6 +74,35 @@
   width: 100%;
   height: 40px;
 }
+.burger {
+  display: none
+}
+
+@media (max-width:885px){
+  .nav-link {
+    display: none;
+   
+  }
+	.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 28px;
+    margin: 4px 15px;
+  }
+  .burger-line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-bg);
+    border-radius: 1px solid var(--main-bg) ;
+  }
+  .burger-line:nth-child(1) {
+    margin-top: 1px;
+  }
+}
+
 .nav-link {
   font-size: 1.2em;
   font-size: 400;
@@ -95,7 +126,7 @@
   flex-wrap: wrap;
   width: 70%;
   height: 100%;
-  margin-top: 16px;
+  margin-top: 10px;
   gap: 10px;
   padding: 10px;
 }
@@ -118,17 +149,24 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
-  width: auto;
-  height: 95px;
+  min-width: 280px;
+  min-height: 95px;
   border: 2px solid var(--main-text-color);
   border-right: 10px solid var(--main-text-color);
-  padding: 5px;
 }
 .my-name {
   line-height: 42px;
   font-size: 38px;
   font-weight: 600;
   letter-spacing: 1.2px;
+}
+
+@media (max-width:465px){
+  .cv-presintation {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px;
+  }
 }
 
 .contact-block {
@@ -184,6 +222,11 @@
 .telegram-svg path {
   fill: var(--main-text-color);
 }
+@media (max-width:378px){
+  .contact-block {
+    min-height: 200px;
+  }
+}
 
 .about-me p {
   margin-bottom: 5px;
@@ -205,6 +248,57 @@
   align-items: center;
   list-style: inside url('../../../assets/svg/graduation-cap-5404.svg');
 }
+.certificate-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.certificate-img-container {
+  width: 450px;
+  height: 300px;
+  margin-left: 1.18%;
+}
+.certificate-img-container img { 
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width:965px){
+  .certificate-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 450px){
+  .certificate-img-container {
+    width: 100%;
+    height: 280px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 400px){
+  .certificate-img-container {
+    width: 100%;
+    height: 270px;
+    margin-left: 0;
+  }
+}
+@media (min-width: 300px) and (max-width: 380px){
+  .certificate-img-container {
+    width: 100%;
+    height: 210px;
+    margin-left: 0;
+  }
+}
+
 .cv-footer {
   display: flex;
   justify-content: center;
@@ -215,7 +309,7 @@
   width: 100%;
   height: auto;
   border-top: 1px solid var(--main-text-color);
-  padding: 10px;
+  padding: 10px 0px;
   background-color: var(--header-and-footer-bg);
 }
 .cv-footer-contact-block-item {
@@ -267,21 +361,6 @@
   align-items: center;
   list-style: inside url('../../../assets/svg/laptop-and-coding-12521.svg');
 }
-.certificate-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.certificate-img-container {
-  width: 40%;
-  height: 300px;
-  margin: 0 15px;
-  background-color: blue;
-}
-.certificate-img-container img { 
-  width: 100%;
-  height: 100%;
- background-size: cover;
-  background-position: center;
-}
+
+
 
