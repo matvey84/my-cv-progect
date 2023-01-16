@@ -340,12 +340,12 @@
 
 .language-item{
   align-items: center;
-  list-style: inside url('../../../assets/svg/translate-speech-bubbles-black-outline-16035.svg');
+  list-style: inside url('../../assets/svg/translate-speech-bubbles-black-outline-16035.svg');
 }
 
 .eduaction-item{
   align-items: center;
-  list-style: inside url('../../../assets/svg/graduation-cap-5404.svg');
+  list-style: inside url('../../assets/svg/graduation-cap-5404.svg');
 }
 
 .certificate-section {
@@ -461,7 +461,7 @@
 }
 .project-item{
   align-items: center;
-  list-style: inside url('../../../assets/svg/laptop-and-coding-12521.svg');
+  list-style: inside url('../../assets/svg/laptop-and-coding-12521.svg');
 }
 
 .slider-container {
