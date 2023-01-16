@@ -30,7 +30,6 @@ function createSkillItemSlider() {
 }
 createSkillItemSlider();
 
-function sliderComputedStyle() {}
 
 const slider = document.querySelector('.slider');
 const skillItemList = document.querySelectorAll('.skill-item');
@@ -45,7 +44,7 @@ const sliderWindowWidth = parseInt(
   window.getComputedStyle(document.querySelector('.slider-window')).width
 );
 
-const startSliderLeftPosition = sliderWindowWidth - sliderWidth + parseInt(skillItem.marginRight) + step;
+const startSliderLeftPosition = sliderWindowWidth - sliderWidth + parseInt(skillItem.marginRight) ;
 
 let sliderLeftPosition = startSliderLeftPosition;
 slider.style.left = sliderLeftPosition + 'px';
@@ -57,7 +56,7 @@ function sliderArrowWork(event) {
 
     if (sliderLeftPosition > 0) {
       sliderLeftPosition = startSliderLeftPosition;
-      slider.style.left = sliderWindowWidth - sliderWidth + parseInt(skillItem.marginRight) + 'px';
+      slider.style.left = sliderLeftPosition + 'px';
     }
   }
 

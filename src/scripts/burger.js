@@ -31,13 +31,13 @@ function createBurgerMenuNavLink() {
   const data = [
     { name: 'CONTACTS', src: '#contacts', },
     { name: 'ABOUT ME', src: '#about-me' },
-    { name: 'ADUCATION AND COURSESE', src: '#aducation' },
+    { name: 'EDUCATION AND COURSESE', src: '#education' },
     { name: 'SKILLS', src: '#skills' },
     { name: 'CERTIFICATES', src: '#certificates' },
     { name: 'LANGUAGES', src: '#languages' },
   ];
 
-  for (let i = 0; i <= data.length; i ++) {
+  for (let i = 0; i < data.length; i ++) {
     const burgerNavLink = document.createElement('a');
     burgerNavLink.classList.add('burger-nav-link');
     burgerNavLink.href = data[i].src;
@@ -70,6 +70,7 @@ function createBakeArrowButton() {
 
   return arrow;
 }
+
 function closeBurgerMenu() {
   const burgerMenu = document.querySelector('.burger-menu');
   burgerMenu.classList.toggle('open-menu');
@@ -77,6 +78,7 @@ function closeBurgerMenu() {
   localStorage.setItem('menuOpen', false);
   cv.classList.remove('no-scroll');
   header.style.backgroundColor = headerBg;
+  slowScroll();
 }
 
 function saveAppState() {
@@ -93,4 +95,25 @@ function saveAppState() {
 }
 saveAppState();
 
+function slowScroll() {
+  const anchors = document.querySelectorAll('a[href*="#"]');
+  const headerHeight = window.getComputedStyle(header).height.split('px').reverse().at(-1) * 2
+  
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', (e) => {
+      e.preventDefault()
+      
+      const blockID = anchor.getAttribute('href').split('#').at(-1);
+      const currentBlock = document.getElementById(blockID);
+        if (e.target.classList.contains('nav-link') || e.target.classList.contains('burger-nav-link')) {currentBlock.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        })
+      }
+    })
+    cvContainer.style.marginTop = headerHeight + 'px'
+  }
+}
+
+slowScroll();
 
